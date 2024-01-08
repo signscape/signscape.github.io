@@ -1,0 +1,358 @@
+
+/*social icons*/
+.social a {
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  display: block;
+  text-align: center;
+  color: gray-100;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 45px; }
+  .social a:hover {
+    background: #1de9b6;
+    color: #000000;
+    transition: all .4s ease-in-out; }
+
+.social.social-sm a {
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  line-height: 35px; }
+
+.social.social-rounded a {
+  border-radius: 50%; }
+
+/*scroll to top */
+.scroll-top {
+  bottom: 20px;
+  font-size: 20px;
+  height: 40px;
+  position: fixed;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 50%;
+  line-height: 40px;
+  right: -100px;
+  color: #ffffff;
+  background-color: rgba(29, 233, 182, 0.5); }
+  .scroll-top:hover {
+    background-color: #1de9b6;
+    transition: all .4s ease-in-out; }
+  .scroll-top.active {
+    right: 20px; }
+
+/* Icon Boxes */
+.icon-box {
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ffffff;
+  margin: 1rem; }
+  .icon-box.box-primary {
+    color: #1de9b6;
+    background-color: rgba(29, 233, 182, 0.1); }
+  .icon-box.box-secondary {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); }
+  .icon-box.box-success {
+    color: #00e676;
+    background-color: rgba(0, 230, 118, 0.1); }
+  .icon-box.box-info {
+    color: #00e5ff;
+    background-color: rgba(0, 229, 255, 0.1); }
+  .icon-box.box-warning {
+    color: #ffea00;
+    background-color: rgba(255, 234, 0, 0.1); }
+  .icon-box.box-danger {
+    color: #ff1744;
+    background-color: rgba(255, 23, 68, 0.1); }
+  .icon-box.box-light {
+    color: #ECEFF1;
+    background-color: rgba(236, 239, 241, 0.1); }
+  .icon-box.box-dark {
+    color: #11171a;
+    background-color: rgba(17, 23, 26, 0.1); }
+  .icon-box .icon-box-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 1.5rem; }
+    .icon-box .icon-box-inner.small {
+      padding: 1.25rem; }
+    .icon-box .icon-box-inner.small-xs {
+      padding: 1rem; }
+
+/*all themes colors*/
+.bg-black {
+  background-color: #000000; }
+
+.bg-blue {
+  background-color: #2979ff; }
+
+.bg-indigo {
+  background-color: #3d5afe; }
+
+.bg-purple {
+  background-color: #d500f9; }
+
+.bg-pink {
+  background-color: #f50057; }
+
+.bg-red {
+  background-color: #ff1744; }
+
+.bg-orange {
+  background-color: #ff9100; }
+
+.bg-yellow {
+  background-color: #ffea00; }
+
+.bg-green {
+  background-color: #00e676; }
+
+.bg-teal {
+  background-color: #1de9b6; }
+
+.bg-cyan {
+  background-color: #00e5ff; }
+
+/*theme switcher*/
+.switcher-wrap {
+  position: fixed;
+  top: 250px;
+  width: 250px;
+  background: #263238;
+  color: #CFD8DC;
+  z-index: 100;
+  padding: 20px;
+  left: -250px;
+  transition: .3s; }
+  .switcher-wrap.active {
+    left: 0; }
+  .switcher-wrap ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .switcher-wrap ul li {
+      margin-bottom: .5rem; }
+      .switcher-wrap ul li a {
+        color: #CFD8DC; }
+        .switcher-wrap ul li a:hover {
+          color: #1de9b6; }
+  .switcher-wrap .color-switcher ul li {
+    width: 28px;
+    height: 28px;
+    float: left;
+    margin: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s; }
+    .switcher-wrap .color-switcher ul li.active {
+      border: 3px solid #455A64; }
+  .switcher-wrap .switcher-trigger {
+    position: absolute;
+    left: 100%;
+    width: 40px;
+    height: 40px;
+    background: #263238;
+    top: 0;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(29, 233, 182, 0.5);
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border-radius: 0 2px 2px 0; }
+    .switcher-wrap .switcher-trigger:hover {
+      color: #1de9b6; }
+
+@media screen and (max-width: 768px) {
+  .switcher-wrap {
+    display: none; } }
+    .typewriter h1 {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+
+
+.bg-cs{
+  background-color: #000000;
+}
+.bg-white{
+  background-color: #0f1011 !important;
+}
+
+
+    
+/* timeline integration */ 
+
+/* CardCustom */
+
+.cookie-card {
+  height: 90px;
+  width: auto;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  box-shadow: 20px 20px 90px rgba(0, 0, 0, .05);
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 600;
+  color: rgb(31 41 55);
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(75 85 99);
+}
+
+.description a {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246);
+}
+
+.description a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  flex-shrink: 0;
+}
+
+.pref {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(31 41 55 );
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  background-color: transparent;
+}
+
+.pref:hover {
+  color: rgb(156 163 175);
+}
+
+.pref:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.accept {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgb(17 24 39);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept:hover {
+  background-color: rgb(55 65 81);
+}
+
+.accept:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+
+.size{
+  font-size: 30px;
+}
+  
+
+.size{
+  font-size: 24px;
+}
+
+.cs { 
+  font-family: 'Space Mono', monospace; 
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  padding: 32px;
+  margin: 60px auto;
+  border: 1px solid #eee;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+ol { padding-left: 50px; }
+li { 
+  color: #4F4F4F; 
+  padding-left: 16px;
+  margin-top: 24px;
+  position: relative;
+  font-size: 24px;
+  line-height: 20px;
+  
+  &:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute; // yeah, you have to manually position it based on the text size, line height, etc. (in the parent li style). it's not the smarest solution 
+    top: -12px;
+    left: -46px;
+  }
+}
+
+strong { color: #292929; }
+
+ol.alternating-colors { 
+  li:nth-child(odd):before { border-color: #0BAD02; }
+  li:nth-child(even):before { border-color: #2378D5; }
+}
